@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	fmt.Println("heyy")
@@ -13,10 +16,19 @@ func main() {
 
 	highScores := make([]int, 4)
 	highScores[0] = 23
-	highScores[1] = 32
+	highScores[1] = 92
 	highScores[2] = 34
 	highScores[3] = 43
 	// highScores[4] = 55
+
+	sort.Ints(highScores)
+
+	var courses = []string{"reactjs", "python", "ruby", "cplusplus", "javascript"}
+	fmt.Println(courses)
+
+	courses = append(courses[:3], courses[4:]...)
+
+	fmt.Println(courses)
 
 	fmt.Println(highScores)
 	fmt.Println(mySlice)
