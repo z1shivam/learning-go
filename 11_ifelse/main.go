@@ -20,7 +20,8 @@ func main() {
 		fmt.Println("this will always be printed...")
 	}
 
-	//you can declare variable on the go
+	// you can declare variable on the go
+	// and remember that there is no ternary in go. so you will have to use if else even for basic tasks.
 
 	if num := 3; num < 10 {
 		fmt.Println("number is less than 10")
