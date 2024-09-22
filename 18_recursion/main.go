@@ -12,7 +12,7 @@ func fact(n int) int {
 func main() {
 	fmt.Println(fact(7))
 
-	var fib func(n int) int // closures can be recursive too.
+	var fib func(n int) int
 
 	fib = func(n int) int {
 		if n < 2 {
